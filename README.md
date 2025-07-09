@@ -33,8 +33,9 @@ This service is responsible for feeds contain critical information such as odds 
 
 ```bash
 # Clone the repository
-git@github.com:rajatpal96/feed-ingestion.git
+git clone git@github.com:rajatpal96/feed-ingestion.git
 
+cd feed-ingestion
 # Run the application
 ./gradlew bootRun
 
@@ -48,8 +49,7 @@ git@github.com:rajatpal96/feed-ingestion.git
 Access Swagger docs at:
 http://localhost:8080/swagger-ui.html
 
-👤 Author
-Your Name – @RajatKumar
+👤 Author – @RajatKumar
 
 
 
