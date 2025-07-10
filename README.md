@@ -54,8 +54,51 @@ http://localhost:8080/swagger-ui.html
 
 ![img.png](img.png)
 
+## **Sample Requests :** 
 
-👤 Author – @RajatKumar
+### **//ProviderAlpha (Endpoint: /provider-alpha/feed)**
+
+###### **ODDS_CHANGE message**
+
+{
+"msg_type": "odds_update",
+"event_id": "ev123",
+"values": {
+"1": 2.0,
+"X": 3.1,
+"2": 3.8
+}
+}
+
+###### BET_SETTLEMENT message
+
+{
+"msg_type": "settlement",
+"event_id": "ev123",
+"outcome": "1" 
+}
+
+### **//ProviderBeta (Endpoint: /provider-beta/feed)**
+
+###### **ODDS_CHANGE message**
+{
+"type": "ODDS",
+"event_id": "ev456",
+"odds": {
+"home": 1.95,
+"draw": 3.2,
+"away": 4.0
+}
+}
+
+###### **BET_SETTLEMENT message**
+{
+"type": "SETTLEMENT",
+"event_id": "ev456",
+"result": "away" // One of "home", "draw", or "away"
+
+
+### 👤 Author – @RajatKumar
 
 
 
