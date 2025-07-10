@@ -15,7 +15,7 @@ This service is responsible for feeds contain critical information such as odds 
 - Java 21
 - Spring Boot 3.5.3
 - Gradle Build Tool
-- SpringDoc (Swagger UI)
+- OpenApi (Swagger UI)
 - In-memory mock queue
 
 ---
@@ -48,6 +48,12 @@ cd feed-ingestion
 🔍 Swagger UI
 Access Swagger docs at:
 http://localhost:8080/swagger-ui.html
+***************************************************************
+****To retrieve in-memory queued data we can use this endpoint
+=> http://localhost:8080/queue****
+
+![img.png](img.png)
+
 
 👤 Author – @RajatKumar
 
